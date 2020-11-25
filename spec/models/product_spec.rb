@@ -17,6 +17,9 @@ RSpec.describe Product, type: :model do
     it { is_expected.to validate_numericality_of(:price).is_greater_than(0).only_integer }
   end
 
+  describe "is expected to belong to one category" do
+    it {is_expected.to belong_to(:category)}
+  end
 
   describe "Factory" do
     it "is expected to be valid" do
