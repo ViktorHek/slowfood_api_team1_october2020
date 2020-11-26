@@ -3,5 +3,6 @@ FactoryBot.define do
     title { "MyString" }
     ingredients { "MyString" }
     price { 1 }
+    association :category
   end
 end
